@@ -1,6 +1,6 @@
 <template>
   <div>
-      header
+      input
   </div>
 </template>
 
