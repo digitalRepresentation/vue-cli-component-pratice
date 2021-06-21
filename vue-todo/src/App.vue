@@ -2,8 +2,8 @@
   <div id="app">
     <TodoHeader></TodoHeader>
     <TodoInput></TodoInput>
-    <TodoFooter></TodoFooter>
     <TodoList></Todolist>
+    <TodoFooter></TodoFooter>
   </div>
 </template>
 
