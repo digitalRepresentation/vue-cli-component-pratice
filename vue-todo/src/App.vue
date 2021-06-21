@@ -29,7 +29,7 @@ export default {
 
 <style>
   body {
-    text-alignt:center;
+    text-align:center;
     background-color: #f6f6f6;
 }
 
