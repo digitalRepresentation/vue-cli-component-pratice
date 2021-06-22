@@ -23,6 +23,8 @@ export default {
   methods: {
     removeTodo: function(todoItem, index) {
       console.log(todoItem, index);
+      localStorage.removeItem(todoItem);
+      this.todoItems.splice(index, 1);
     }
   },
   created: function() {
@@ -31,7 +33,6 @@ export default {
           if (localStorage.key(i) !== 'loglevel:webpack-dev-server'){
             this.todoItems.push(localStorage.key(i));
           }
-          //conseole.log(localStorage.key(i));
         }
       }
     }
