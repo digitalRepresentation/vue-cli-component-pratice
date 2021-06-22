@@ -1,9 +1,14 @@
 <template>
   <div>
       <ul>
-        <li v-for="todoItem in todoItems" v-bind:key="todoItem">
+        <li v-for="(todoItem, index) in todoItems" v-bind:key="todoItem" class="shadow">
           {{ todoItem }}
+          <span class="removeBtn" v-on:click="removeTodo(todoItem, index)">
+            <i class="fas fa-trash-alt"></i>
+          </span>
         </li>
+
+
       </ul>
   </div>
 </template>
@@ -13,6 +18,11 @@ export default {
   data: function() {
     return {
       todoItems: []
+    }
+  },
+  methods: {
+    removeTodo: function(todoItem, index) {
+      console.log(todoItem, index);
     }
   },
   created: function() {
