@@ -2,6 +2,7 @@
   <div>
       <ul>
         <li v-for="(todoItem, index) in todoItems" v-bind:key="todoItem" class="shadow">
+          <i class="checkBtn fas fa-check" v-on:click="toggleComplete"></i>
           {{ todoItem }}
           <span class="removeBtn" v-on:click="removeTodo(todoItem, index)">
             <i class="fas fa-trash-alt"></i>
@@ -25,6 +26,9 @@ export default {
       console.log(todoItem, index);
       localStorage.removeItem(todoItem);
       this.todoItems.splice(index, 1);
+    },
+    toggleComplete: function() {
+
     }
   },
   created: function() {
@@ -39,7 +43,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 ul {
   list-style-type: none;
   padding-left: 0px;
