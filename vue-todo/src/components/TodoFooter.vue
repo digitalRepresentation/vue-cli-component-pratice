@@ -1,6 +1,6 @@
 <template>
-  <div>
-      <span>
+  <div class="clearAllContainer">
+      <span class="clearAllBtn" v-on:click='clearTodo'>
         Clear All
       </span>
   </div>
@@ -8,7 +8,11 @@
 
 <script>
 export default {
-
+  methods: {
+    clearTodo: function() {
+      localStorage.clear();
+    }
+  }
 }
 </script>
 
@@ -21,7 +25,6 @@ export default {
     border-radius: 5px;
     margin: 0 auto;
   }
-
   .clearAllBtn {
     color: #e20303;
     display: block;
