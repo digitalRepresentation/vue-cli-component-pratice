@@ -39,6 +39,7 @@ export default {
     },
     clearAllItems: function() {
       localStorage.clear();
+      this.todoItems = [];
     }
   },
   created: function() {
