@@ -19,6 +19,8 @@ export default {
       if(this.newTodoItem !== ''){
         this.$emit('addTodoItem', this.newTodoItem);
         this.clearInput();
+      }else {
+        alert('type str')
       }
       
     },
