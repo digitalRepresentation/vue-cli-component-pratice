@@ -18,7 +18,7 @@
 
               <div class="modal-footer">
                 <slot name="footer">
-                  default footer
+                  copyright jinyoung Kim
                   <button class="modal-default-button" @click="$emit('close')">
                     OK
                   </button>

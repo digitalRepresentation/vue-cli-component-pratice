@@ -13,7 +13,10 @@
     -->
         <h3 slot="header">
           警告!
-          </h3>
+        </h3>
+        <h3 slot="body">
+          データを入力して下さい。
+        </h3>
       </Modal>
   </div>
 </template>
