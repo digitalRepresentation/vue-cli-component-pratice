@@ -6,13 +6,15 @@
       </span>
 
       
-      <modal v-if="showModal" @close="showModal = false">
+      <Modal v-if="showModal" @close="showModal = false">
         <!--
       you can use custom content here to overwrite
       default content
     -->
-        <h3 slot="header">custom header</h3>
-      </modal>
+        <h3 slot="header">
+          custom header
+          </h3>
+      </Modal>
   </div>
 </template>
 
@@ -22,7 +24,8 @@ import Modal from './common/Modal.vue'
 export default {
   data: function() {
     return {
-      newTodoItem: ""  
+      newTodoItem: "",
+      showModal: false
     }
   },
   methods: {
