@@ -12,7 +12,7 @@
       default content
     -->
         <h3 slot="header">
-          custom header
+          警告!
           </h3>
       </Modal>
   </div>
@@ -34,7 +34,7 @@ export default {
         this.$emit('addTodoItem', this.newTodoItem);
         this.clearInput();
       }else {
-        alert('type str')
+        this.showModal = !this.showModal;
       }
       
     },
