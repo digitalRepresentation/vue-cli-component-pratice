@@ -13,6 +13,7 @@
     -->
         <h3 slot="header">
           警告!
+          <i class="fas fa-times"></i>
         </h3>
         <div slot="body">
           データを入力して下さい。
